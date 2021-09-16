@@ -1,11 +1,13 @@
 import './App.css';
+import Home from './components/Home';
+import Task from './components/Task';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello react</h1>
-
-    </div>
+    [<Task/>,
+    <Home/>]
+    
+    
   );
 }
 
