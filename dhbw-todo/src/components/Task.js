@@ -20,15 +20,15 @@ function Task(){
     );
 }
 
-function loeschen(event) {
-    event.target.ParentElement.remove();
+function loeschen() {
+    Event.ParentElement.remove();
 }
 
 function addToList(){
-    let ListenElement = document.createElement("div");
     let InputWert = document.getElementById("TextInput").value;
-    ListenElement.innerHTML = `<p>${InputWert}</p> <div onClick>Editieren</div> <button onClick = "function loeschen()">Entfernen</button>`;
-    document.getElementById("Liste").appendChild(ListenElement);
+    let inner = document.createElement("div");
+    inner.innerHTML= `<p>${InputWert}</p> <div onClick>Editieren</div> <button onClick = "event.target.parentElement.remove()">Entfernen</button>`;
+    document.getElementById("Liste").appendChild(inner);
 }
 
 
