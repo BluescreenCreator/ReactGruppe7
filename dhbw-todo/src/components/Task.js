@@ -5,6 +5,7 @@ import React from "react";
 function Task(){
     return(
         <div>
+        <h1>Ihre To-Do-Liste</h1>
         <div id = "CreateTask">
             <input id = "TextInput"></input>
             <button onClick = {addToList}>+</button>
@@ -20,14 +21,17 @@ function Task(){
     );
 }
 
+//diese Funktion loescht eine Aufgabe, dies wird ueber einen onClick auf "Entfernen" ausgeloest
 function loeschen() {
     Event.ParentElement.remove();
 }
 
+// diese Funktion erzeugt neue Listenelemente/Aufgaben hierbei handelt es sich um einen p tag, welcher erzeugt wird.
+// Zeile 34: in diesem Button hier befindet sich das onClick event, um eine Aufgabe zu loeschen.
 function addToList(){
     let InputWert = document.getElementById("TextInput").value;
     let inner = document.createElement("div");
-    inner.innerHTML= `<p>${InputWert}</p> <div onClick>Editieren</div> <button onClick = "event.target.parentElement.remove()">Entfernen</button>`;
+    inner.innerHTML= `<p>${InputWert}</p> <button onClick = "event.target.parentElement.remove()">Entfernen</button>`;
     document.getElementById("Liste").appendChild(inner);
 }
 

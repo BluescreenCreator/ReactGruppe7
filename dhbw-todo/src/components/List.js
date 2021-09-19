@@ -6,8 +6,9 @@ function List(){
     return(
         <div id="getNew">
        
-            <input id="newtext" type="text"/>
+            <input id="newtext" type="text"/> 
             <button onClick={changeOld}>Ändern</button>
+            
         </div>
     );
 }

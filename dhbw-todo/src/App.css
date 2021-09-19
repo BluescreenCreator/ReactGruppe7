@@ -8,12 +8,14 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  margin-top: 100px;
+  margin-left: 200px;
 }
 
 #Homescreen {
   height: 100vh;
   width: 100%;
-  background-color: blue;
+  background-image: linear-gradient(120deg, #100a22 0%, #100a22 100%);
   position: fixed;
   overflow: hidden;
   left: 0;
@@ -35,4 +37,17 @@ body {
   top: 120px;
   left: 0;
   overflow: hidden;
+  margin-top: 150px;
+  margin-left: 400px;
 }
+
+#CreateTask {
+  padding-top: 10px;
+}
+
+
+
+
+
+
+
