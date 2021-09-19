@@ -7,11 +7,10 @@ function Task(){
         <div>
         <h1>Ihre To-Do-Liste</h1>
         <div id = "CreateTask">
-            <input id = "TextInput"></input>
+            <input id = "TextInput" type="text"></input>
             <button onClick = {addToList}>+</button>
             <button onClick = {ListeLoeschen}>Alles Fertig!</button>
-            <div id ="Liste"></div>
-            <button id = "invis" onclick = {loeschen}></button>    
+            <div id ="Liste"></div>  
         </div>
 
         
@@ -21,10 +20,7 @@ function Task(){
     );
 }
 
-//diese Funktion loescht eine Aufgabe, dies wird ueber einen onClick auf "Entfernen" ausgeloest
-function loeschen() {
-    Event.ParentElement.remove();
-}
+
 
 // diese Funktion erzeugt neue Listenelemente/Aufgaben hierbei handelt es sich um einen p tag, welcher erzeugt wird.
 // Zeile 34: in diesem Button hier befindet sich das onClick event, um eine Aufgabe zu loeschen.
